@@ -64,7 +64,7 @@ GET http://localhost:5000/api/admin - fetch Home Page
 
 GET http://localhost:5000/api/admin/product - Fetch all products
 
-# res: 
+res: 
 {
     "status": "success",
     "message": "product founded successfully",
@@ -78,53 +78,13 @@ GET http://localhost:5000/api/admin/product - Fetch all products
             "createdAt": "2024-11-21T04:51:04.957Z",
             "updatedAt": "2024-11-21T04:51:04.957Z",
             "__v": 0
-        },
-        {
-            "_id": "673ebc5c01226b8faa4477e3",
-            "name": "Massage oils",
-            "price": 200,
-            "stock": 30,
-            "categoryId": "673ebbe901226b8faa4477db",
-            "createdAt": "2024-11-21T04:51:40.605Z",
-            "updatedAt": "2024-11-21T04:51:40.605Z",
-            "__v": 0
-        },
-        {
-            "_id": "673ebc7201226b8faa4477e6",
-            "name": "Herbal face packs",
-            "price": 200,
-            "stock": 30,
-            "categoryId": "673ebbe901226b8faa4477db",
-            "createdAt": "2024-11-21T04:52:02.685Z",
-            "updatedAt": "2024-11-21T04:52:02.685Z",
-            "__v": 0
-        },
-        {
-            "_id": "673ebc9d01226b8faa4477e9",
-            "name": "T-Shirt",
-            "price": 200,
-            "stock": 30,
-            "categoryId": null,
-            "createdAt": "2024-11-21T04:52:45.555Z",
-            "updatedAt": "2024-11-21T04:53:53.051Z",
-            "__v": 0
-        },
-        {
-            "_id": "673ebd6101226b8faa4477ef",
-            "name": "The Alchemist",
-            "price": 200,
-            "stock": 30,
-            "categoryId": "673ebc0201226b8faa4477dd",
-            "createdAt": "2024-11-21T04:56:01.445Z",
-            "updatedAt": "2024-11-21T04:56:01.445Z",
-            "__v": 0
         }
     ]
 }
 
 GET http://localhost:5000/api/admin/product/id - Fetch specific product By id
 
-# res: 
+res: 
 {
     "status": "success",
     "product": {
@@ -142,7 +102,7 @@ GET http://localhost:5000/api/admin/product/id - Fetch specific product By id
 
 GET http://localhost:5000/api/admin/product/category/id - Fetch specific product By categoryId
 
-# res: 
+res: 
 {
     "status": "success",
     "message": "product founded Seccessfully",
@@ -172,7 +132,7 @@ GET http://localhost:5000/api/admin/product/category/id - Fetch specific product
 
 POST http://localhost:5000/api/admin/product/create - Create a new product
 
-# body : 
+body: 
 {
     "name": "Atomic Habits",
     "price": 200,
@@ -180,7 +140,7 @@ POST http://localhost:5000/api/admin/product/create - Create a new product
     "categoryId": "673ebc0201226b8faa4477dd"
 }
 
-# res: 
+res: 
 {
     "status": "success",
     "message": "create new product",
@@ -198,7 +158,7 @@ POST http://localhost:5000/api/admin/product/create - Create a new product
 
 PUT http://localhost:5000/api/admin/product/id - Update specific product By id
 
-# body: 
+body:  
 {
     "name": "The Alchemist",
     "price": 300,
@@ -206,7 +166,7 @@ PUT http://localhost:5000/api/admin/product/id - Update specific product By id
     "categoryId": "673ebc0201226b8faa4477dd"
 }
 
-# res: 
+res: 
 {
     "status": "success",
     "product": {
@@ -223,7 +183,7 @@ PUT http://localhost:5000/api/admin/product/id - Update specific product By id
 
 DELETE http://localhost:5000/api/admin/product/id - Delete specific product By id
 
-# res: 
+res: 
 {
     "status": "success",
     "message": "Deleted product"
@@ -233,28 +193,10 @@ DELETE http://localhost:5000/api/admin/product/id - Delete specific product By i
 
 GET http://localhost:5000/api/admin/categories - Fetch all categories
 
-# res: 
+res: 
 {
     "status": "success",
     "categories": [
-        {
-            "_id": "673ebbae01226b8faa4477d7",
-            "name": "Travel & Luggage",
-            "description": "Prepare for your next adventure with durable luggage, travel accessories, and outdoor gear. Designed to make your trips convenient and comfortable.",
-            "productId": [],
-            "createdAt": "2024-11-21T04:48:46.554Z",
-            "updatedAt": "2024-11-21T04:48:46.554Z",
-            "__v": 0
-        },
-        {
-            "_id": "673ebbd501226b8faa4477d9",
-            "name": "Electronics",
-            "description": "Explore the latest gadgets and devices, including smartphones, laptops, cameras, smartwatches, and more. Upgrade your tech game with cutting-edge technology and top brands.",
-            "productId": [],
-            "createdAt": "2024-11-21T04:49:25.847Z",
-            "updatedAt": "2024-11-21T04:49:25.847Z",
-            "__v": 0
-        },
         {
             "_id": "673ebbe901226b8faa4477db",
             "name": "Beauty & Personal Care",
@@ -285,7 +227,7 @@ GET http://localhost:5000/api/admin/categories - Fetch all categories
 
 GET http://localhost:5000/api/admin/categories/id - Fetch all category By id
 
-# res: 
+res: 
 {
     "status": "success",
     "category": {
@@ -301,7 +243,7 @@ GET http://localhost:5000/api/admin/categories/id - Fetch all category By id
 
 GET http://localhost:5000/api/admin/categories/product/id - Fetch all category By productId
 
-# res: 
+res: 
 {
     "status": "success",
     "message": "category founded Seccessfully",
@@ -324,13 +266,13 @@ GET http://localhost:5000/api/admin/categories/product/id - Fetch all category B
 
 POST http://localhost:5000/api/admin/categories/create - Create a new category
 
-# body: 
+body:  
 {
     "name": "Furniture",
     "description": "Find high-quality furniture for every room in your home. From beds and sofas to office chairs and tables, we’ve got it all."
 }
 
-# res: 
+res: 
 {
     "status": "success",
     "message": "create new category",
@@ -347,13 +289,13 @@ POST http://localhost:5000/api/admin/categories/create - Create a new category
 
 PUT http://localhost:5000/api/admin/categories/id - Update a category
 
-# body
+body: 
 {
     "name": "Furnitures",
     "description": "Find high-quality furniture for every room in your home. From beds and sofas to office chairs and tables, we’ve got it all."
 }
 
-# res: 
+res: 
 {
     "status": "success",
     "message": "category updated",
@@ -370,7 +312,7 @@ PUT http://localhost:5000/api/admin/categories/id - Update a category
 
 DELETE http://localhost:5000/api/admin/categories/id - Delete a category
 
-# res: 
+res: 
 {
     "status": "success",
     "message": "deleted Category"
