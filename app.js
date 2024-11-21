@@ -25,7 +25,7 @@ app.use(express.json());
 app.use("/api/admin/product", productRouter);
 app.use("/api/admin/categories", categoryRouter);
 
-app.get("/api/admin", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Welcome E-Commerce");
 });
 
