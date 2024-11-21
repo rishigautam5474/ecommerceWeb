@@ -29,13 +29,13 @@ cd <repository_name>
 
 Install the required packages using npm or yarn:
 
-*** Using npm ***
+**_ Using npm _**
 
 ```
 npm install
 ```
 
-*** OR using yarn ***
+**_ OR using yarn _**
 
 ```
 yarn install
@@ -49,16 +49,19 @@ Create a .env file in the root directory with the following variables:
 PORT=5000
 MONGO_URI=mongodb+srv://your-username:your-password@cluster-url/your-database-name
 ```
+
 ### 4. Start the Server
 
 Run the application using the following commands:
 
-*** Using npm *** 
+**_ Using npm _**
+
 ```
 npm start
 ```
 
-*** OR using yarn ***
+**_ OR using yarn _**
+
 ```
 yarn start
 ```
@@ -72,7 +75,8 @@ Use Postman, or a browser to test the API endpoints. Some sample routes include:
 ### -Fetch Home Page
 
 GET http://localhost:5000/
-res: 
+res:
+
 ```
 Welcome E-Commerce
 ```
@@ -83,7 +87,8 @@ Welcome E-Commerce
 
 GET http://localhost:5000/api/admin/product
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -107,7 +112,8 @@ res:
 
 GET http://localhost:5000/api/admin/product/id
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -128,7 +134,8 @@ res:
 
 GET http://localhost:5000/api/admin/product/category/id
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -162,7 +169,8 @@ res:
 
 POST http://localhost:5000/api/admin/product/create
 
-body: 
+body:
+
 ```
 {
     "name": "Atomic Habits",
@@ -172,7 +180,8 @@ body:
 }
 ```
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -189,11 +198,13 @@ res:
     }
 }
 ```
+
 ### -Update specific product By id
 
 PUT http://localhost:5000/api/admin/product/id
 
-body:  
+body:
+
 ```
 {
     "name": "The Alchemist",
@@ -203,7 +214,8 @@ body:
 }
 ```
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -224,7 +236,8 @@ res:
 
 DELETE http://localhost:5000/api/admin/product/id
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -238,7 +251,8 @@ res:
 
 GET http://localhost:5000/api/admin/categories
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -276,7 +290,8 @@ res:
 
 GET http://localhost:5000/api/admin/categories/id
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -296,7 +311,8 @@ res:
 
 GET http://localhost:5000/api/admin/categories/product/id
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -323,7 +339,8 @@ res:
 
 POST http://localhost:5000/api/admin/categories/create
 
-body:  
+body:
+
 ```
 {
     "name": "Furniture",
@@ -331,7 +348,8 @@ body:
 }
 ```
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -352,7 +370,8 @@ res:
 
 PUT http://localhost:5000/api/admin/categories/id
 
-body: 
+body:
+
 ```
 {
     "name": "Furnitures",
@@ -360,7 +379,8 @@ body:
 }
 ```
 
-res: 
+res:
+
 ```
 {
     "status": "success",
@@ -381,10 +401,43 @@ res:
 
 DELETE http://localhost:5000/api/admin/categories/id
 
-res: 
+res:
+
 ```
 {
     "status": "success",
     "message": "deleted Category"
 }
+```
+
+# Schema Design
+
+### Categories Table
+
+```
+id: Primary key
+name: Category name (e.g., Electronics, Clothing)
+description: (Optional) Description of the category
+```
+
+### Products Table
+
+```
+id: Primary key
+name: Product name (e.g., Smartphone, Jeans)
+description: Product description
+price: Product price
+category_id: Foreign key referencing the Categories table
+```
+
+# Relationships
+
+### Categories and Products:
+
+```
+Each category can have multiple products (One-to-Many relationship).
+Example:
+    Category: Electronics
+        Products: Smartphone, Laptop
+Products may also have a many-to-many relationship with features or tags in complex systems, using an intermediary table.
 ```
