@@ -29,13 +29,17 @@ cd <repository_name>
 
 Install the required packages using npm or yarn:
 
-### Using npm
+*** Using npm ***
 
-```npm install```
+```
+npm install
+```
 
-### OR using yarn
+*** OR using yarn ***
 
-```yarn install```
+```
+yarn install
+```
 
 ### 3. Set Up Environment Variables
 
@@ -50,10 +54,14 @@ MONGO_URI=mongodb+srv://your-username:your-password@cluster-url/your-database-na
 Run the application using the following commands:
 
 *** Using npm *** 
+```
 npm start
+```
 
 *** OR using yarn ***
+```
 yarn start
+```
 
 ### 5. Test the APIs
 
@@ -68,7 +76,8 @@ GET http://localhost:5000/api/admin - fetch Home Page
 GET http://localhost:5000/api/admin/product - Fetch all products
 
 res: 
-```{
+```
+{
     "status": "success",
     "message": "product founded successfully",
     "products": [
@@ -84,10 +93,12 @@ res:
         }
     ]
 }
+```
 
 GET http://localhost:5000/api/admin/product/id - Fetch specific product By id
 
 res: 
+```
 {
     "status": "success",
     "product": {
@@ -101,11 +112,12 @@ res:
         "__v": 0
     }
 }
-
+```
 
 GET http://localhost:5000/api/admin/product/category/id - Fetch specific product By categoryId
 
 res: 
+```
 {
     "status": "success",
     "message": "product founded Seccessfully",
@@ -132,18 +144,22 @@ res:
         }
     ]
 }
+```
 
 POST http://localhost:5000/api/admin/product/create - Create a new product
 
 body: 
+```
 {
     "name": "Atomic Habits",
     "price": 200,
     "stock": 30,
     "categoryId": "673ebc0201226b8faa4477dd"
 }
+```
 
 res: 
+```
 {
     "status": "success",
     "message": "create new product",
@@ -158,18 +174,22 @@ res:
         "__v": 0
     }
 }
+```
 
 PUT http://localhost:5000/api/admin/product/id - Update specific product By id
 
 body:  
+```
 {
     "name": "The Alchemist",
     "price": 300,
     "stock": 20,
     "categoryId": "673ebc0201226b8faa4477dd"
 }
+```
 
 res: 
+```
 {
     "status": "success",
     "product": {
@@ -183,14 +203,17 @@ res:
         "__v": 0
     }
 }
+```
 
 DELETE http://localhost:5000/api/admin/product/id - Delete specific product By id
 
 res: 
+```
 {
     "status": "success",
     "message": "Deleted product"
 }
+```
 
 # Categories
 
