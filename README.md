@@ -71,7 +71,7 @@ Use Postman, or a browser to test the API endpoints. Some sample routes include:
 
 ### -Fetch Home Page
 
-GET http://localhost:5000/api/admin 
+GET http://localhost:5000/
 
 # Products
 
