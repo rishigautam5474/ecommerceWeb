@@ -220,6 +220,7 @@ res:
 GET http://localhost:5000/api/admin/categories - Fetch all categories
 
 res: 
+```
 {
     "status": "success",
     "categories": [
@@ -250,10 +251,12 @@ res:
         }
     ]
 }
+```
 
 GET http://localhost:5000/api/admin/categories/id - Fetch all category By id
 
 res: 
+```
 {
     "status": "success",
     "category": {
@@ -266,10 +269,12 @@ res:
         "__v": 0
     }
 }
+```
 
 GET http://localhost:5000/api/admin/categories/product/id - Fetch all category By productId
 
 res: 
+```
 {
     "status": "success",
     "message": "category founded Seccessfully",
@@ -289,16 +294,20 @@ res:
         }
     ]
 }
+```
 
 POST http://localhost:5000/api/admin/categories/create - Create a new category
 
 body:  
+```
 {
     "name": "Furniture",
     "description": "Find high-quality furniture for every room in your home. From beds and sofas to office chairs and tables, we’ve got it all."
 }
+```
 
 res: 
+```
 {
     "status": "success",
     "message": "create new category",
@@ -312,16 +321,20 @@ res:
         "__v": 0
     }
 }
+```
 
 PUT http://localhost:5000/api/admin/categories/id - Update a category
 
 body: 
+```
 {
     "name": "Furnitures",
     "description": "Find high-quality furniture for every room in your home. From beds and sofas to office chairs and tables, we’ve got it all."
 }
+```
 
 res: 
+```
 {
     "status": "success",
     "message": "category updated",
@@ -335,11 +348,14 @@ res:
         "__v": 0
     }
 }
+```
 
 DELETE http://localhost:5000/api/admin/categories/id - Delete a category
 
 res: 
+```
 {
     "status": "success",
     "message": "deleted Category"
 }
+```
