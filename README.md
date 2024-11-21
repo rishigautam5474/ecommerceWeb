@@ -72,6 +72,10 @@ Use Postman, or a browser to test the API endpoints. Some sample routes include:
 ### -Fetch Home Page
 
 GET http://localhost:5000/
+res: 
+```
+Welcome E-Commerce
+```
 
 # Products
 
