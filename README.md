@@ -69,11 +69,15 @@ Use Postman, or a browser to test the API endpoints. Some sample routes include:
 
 # Home
 
-GET http://localhost:5000/api/admin - fetch Home Page
+### -Fetch Home Page
+
+GET http://localhost:5000/api/admin 
 
 # Products
 
-GET http://localhost:5000/api/admin/product - Fetch all products
+### -Fetch all products
+
+GET http://localhost:5000/api/admin/product
 
 res: 
 ```
@@ -95,7 +99,9 @@ res:
 }
 ```
 
-GET http://localhost:5000/api/admin/product/id - Fetch specific product By id
+### -Fetch specific product By id
+
+GET http://localhost:5000/api/admin/product/id
 
 res: 
 ```
@@ -114,7 +120,9 @@ res:
 }
 ```
 
-GET http://localhost:5000/api/admin/product/category/id - Fetch specific product By categoryId
+### -Fetch specific product By categoryId
+
+GET http://localhost:5000/api/admin/product/category/id
 
 res: 
 ```
@@ -146,7 +154,9 @@ res:
 }
 ```
 
-POST http://localhost:5000/api/admin/product/create - Create a new product
+### -Create a new product
+
+POST http://localhost:5000/api/admin/product/create
 
 body: 
 ```
@@ -175,8 +185,9 @@ res:
     }
 }
 ```
+### -Update specific product By id
 
-PUT http://localhost:5000/api/admin/product/id - Update specific product By id
+PUT http://localhost:5000/api/admin/product/id
 
 body:  
 ```
@@ -205,7 +216,9 @@ res:
 }
 ```
 
-DELETE http://localhost:5000/api/admin/product/id - Delete specific product By id
+### -Delete specific product By id
+
+DELETE http://localhost:5000/api/admin/product/id
 
 res: 
 ```
@@ -217,7 +230,9 @@ res:
 
 # Categories
 
-GET http://localhost:5000/api/admin/categories - Fetch all categories
+### -Fetch all categories
+
+GET http://localhost:5000/api/admin/categories
 
 res: 
 ```
@@ -253,7 +268,9 @@ res:
 }
 ```
 
-GET http://localhost:5000/api/admin/categories/id - Fetch all category By id
+### -Fetch all category By id
+
+GET http://localhost:5000/api/admin/categories/id
 
 res: 
 ```
@@ -271,7 +288,9 @@ res:
 }
 ```
 
-GET http://localhost:5000/api/admin/categories/product/id - Fetch all category By productId
+### -Fetch all category By productId
+
+GET http://localhost:5000/api/admin/categories/product/id
 
 res: 
 ```
@@ -296,7 +315,9 @@ res:
 }
 ```
 
-POST http://localhost:5000/api/admin/categories/create - Create a new category
+### -Create a new category
+
+POST http://localhost:5000/api/admin/categories/create
 
 body:  
 ```
@@ -323,7 +344,9 @@ res:
 }
 ```
 
-PUT http://localhost:5000/api/admin/categories/id - Update a category
+### -Update a category
+
+PUT http://localhost:5000/api/admin/categories/id
 
 body: 
 ```
@@ -350,7 +373,9 @@ res:
 }
 ```
 
-DELETE http://localhost:5000/api/admin/categories/id - Delete a category
+### -Delete a category
+
+DELETE http://localhost:5000/api/admin/categories/id
 
 res: 
 ```
