@@ -435,9 +435,9 @@ category_id: Foreign key referencing the Categories table
 ### Categories and Products:
 
 ```
-Each category can have multiple products (One-to-Many relationship).
+1. Each category can have multiple products (One-to-Many relationship).
 Example:
     Category: Electronics
         Products: Smartphone, Laptop
-Products may also have a many-to-many relationship with features or tags in complex systems, using an intermediary table.
+2. Products may also have a many-to-many relationship with features or tags in complex systems, using an intermediary table.
 ```
