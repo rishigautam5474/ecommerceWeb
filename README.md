@@ -29,19 +29,22 @@ cd <repository_name>
 
 Install the required packages using npm or yarn:
 
-# Using npm
+### Using npm
+
 ```npm install```
 
-# OR using yarn
+### OR using yarn
+
 ```yarn install```
 
 ### 3. Set Up Environment Variables
 
 Create a .env file in the root directory with the following variables:
 
+```
 PORT=5000
 MONGO_URI=mongodb+srv://your-username:your-password@cluster-url/your-database-name
-
+```
 ### 4. Start the Server
 
 Run the application using the following commands:
