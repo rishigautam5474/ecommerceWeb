@@ -1,11 +1,12 @@
-### **Project Name**
+# **Project Name**
 
-Ecommerce Website Backend
+E-commerce Website Backend
 
-**A brief description of your project.**
+# A brief description of your project.
+
 This is a Node.js project built with Express.js and MongoDB. It provides REST APIs for managing resources.
 
-### Features
+# Features
 
 - **Products API**: Create, update, delete, and fetch product details.
 - **Categories API**: Manage product categories.
@@ -14,7 +15,7 @@ This is a Node.js project built with Express.js and MongoDB. It provides REST AP
 
 ---
 
-### Setup Instructions
+# Setup Instructions
 
 Follow these steps to set up and run the project locally:
 
