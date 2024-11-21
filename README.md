@@ -65,7 +65,7 @@ GET http://localhost:5000/api/admin - fetch Home Page
 GET http://localhost:5000/api/admin/product - Fetch all products
 
 res: 
-{
+```{
     "status": "success",
     "message": "product founded successfully",
     "products": [
