@@ -22,7 +22,7 @@ Follow these steps to set up and run the project locally:
 
 Clone the project from the repository:
 
-git clone <repository_url>
+git clone https://github.com/rishigautam5474/ecommerceWeb.git
 cd <repository_name>
 
 ### 2. Install Dependencies
@@ -30,10 +30,10 @@ cd <repository_name>
 Install the required packages using npm or yarn:
 
 # Using npm
-npm install
+```npm install```
 
 # OR using yarn
-yarn install
+```yarn install```
 
 ### 3. Set Up Environment Variables
 
