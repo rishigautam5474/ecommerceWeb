@@ -46,10 +46,10 @@ MONGO_URI=mongodb+srv://your-username:your-password@cluster-url/your-database-na
 
 Run the application using the following commands:
 
-# Using npm
+*** Using npm *** 
 npm start
 
-# OR using yarn
+*** OR using yarn ***
 yarn start
 
 ### 5. Test the APIs
