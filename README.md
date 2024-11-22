@@ -2,10 +2,6 @@
 
 E-commerce Website Backend
 
-# A brief description of your project.
-
-This is a Node.js project built with Express.js and MongoDB. It provides REST APIs for managing resources. This e-commerce platform allows users to browse and purchase products categorized into different categories. The project features a well-structured database with a one-to-many relationship between Categories and Products, enabling efficient management and display of items. Users can filter products based on categories, view product details, and add items to their cart. The platform is designed with scalability in mind, supporting features like search, sorting, and tagging for enhanced user experience.
-
 # Features
 
 - **Products API**: Create, update, delete, and fetch product details.
