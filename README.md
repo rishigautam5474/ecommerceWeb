@@ -24,6 +24,7 @@ Follow these steps to set up and run the project locally:
 Clone the project from the repository:
 
 git clone https://github.com/rishigautam5474/ecommerceWeb.git
+
 cd <repository_name>
 
 ### 2. Install Dependencies
